@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <!--app:cardBackgroundColor这是设置背景颜色-->
+    <!--app:cardCornerRadius这是设置圆角大小-->
+    <!--app:cardElevation这是设置z轴的阴影-->
+    <!--app:cardMaxElevation这是设置z轴的最大高度值-->
+    <!--app:cardUseCompatPadding是否使用CompatPadding-->
+    <!--app:cardPreventCornerOverlap是否使用PreventCornerOverlap-->
+    <!--app:contentPadding 设置内容的padding-->
+    <!--app:contentPaddingLeft 设置内容的左padding-->
+    <!--app:contentPaddingTop 设置内容的上padding-->
+    <!--app:contentPaddingRight 设置内容的右padding-->
+    <!--app:contentPaddingBottom 设置内容的底padding-->
+    <!---->
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+
+                <ImageView
+                    android:id="@+id/juhe_news_it_pic"
+                    android:layout_width="@dimen/news_item_image"
+                    android:layout_height="@dimen/news_item_image"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@mipmap/load_image_fail" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/la_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/juhe_news_it_author_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:lines="1"
+                            android:text="author_name"
+                            android:textColor="@color/news_item_title"
+                            android:textSize="@dimen/news_item_title"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/juhe_news_it_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="end|top"
+                            android:text="date"
+                            android:textColor="@color/news_item_descrip_date"
+                            android:textSize="@dimen/news_item_des_date" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/juhe_news_it_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/la_11"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="41dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="2"
+                        android:textColor="@color/news_item_descrip_date"
+                        android:textSize="@dimen/news_item_des_date" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+    <!--<LinearLayout--><!--android:paddingLeft="16dp"--><!--android:paddingRight="16dp"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="horizontal">-->
+
+
+    <!--<ImageView--><!--android:id="@+id/juhe_news_it_pic"--><!--android:layout_width="@dimen/news_item_image"--><!--android:layout_height="@dimen/news_item_image"--><!--android:layout_marginBottom="10dp"--><!--android:layout_marginTop="13dp"--><!--android:src="@mipmap/load_image_fail" />-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:orientation="vertical"--><!--android:paddingLeft="10dp">-->
+
+    <!--<LinearLayout--><!--android:id="@+id/la_11"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="10dp"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:textStyle="bold"--><!--android:id="@+id/juhe_news_it_author_name"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="0.3"--><!--android:ellipsize="end"--><!--android:gravity="start"--><!--android:lines="1"--><!--android:text="author_name"--><!--android:textColor="@color/news_item_title"--><!--android:textSize="@dimen/news_item_title" />-->
+
+    <!--<TextView--><!--android:id="@+id/juhe_news_it_date"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="0.7"--><!--android:gravity="end|center"--><!--android:text="date"--><!--android:textColor="@color/news_item_descrip_date"--><!--android:textSize="@dimen/news_item_des_date" />--><!--</LinearLayout>-->
+
+    <!--<TextView--><!--android:id="@+id/juhe_news_it_title"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@id/la_11"--><!--android:layout_marginBottom="5dp"--><!--android:layout_marginRight="41dp"--><!--android:layout_marginTop="5dp"--><!--android:maxLines="2"--><!--android:textColor="@color/news_item_descrip_date"--><!--android:textSize="@dimen/news_item_des_date" />-->
+
+    <!--</RelativeLayout>--><!--</LinearLayout>-->
+
+

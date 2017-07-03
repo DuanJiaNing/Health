@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_height"
+            android:background="@color/white"
+            android:id="@+id/relativeLayout"
+            >
+
+            <Button
+                android:paddingLeft="16dp"
+                android:gravity="start|center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/white_d_d_d"
+                android:background="#00ffffff"
+                android:text="确认"
+                android:layout_alignParentTop="true"
+                android:id="@+id/health_category_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white_d"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView3" />
+
+            <Button
+                android:paddingRight="16dp"
+                android:gravity="end|center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/express_query"
+                android:background="#00ffffff"
+                android:text="取消"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/health_category_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/health_category_ok"
+                android:layout_toEndOf="@+id/health_category_ok" />
+        </RelativeLayout>
+
+        <com.example.ai.forhealth.view.mview.NumberPickerView
+            android:id="@+id/health_category_number_picker"
+            android:layout_below="@id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

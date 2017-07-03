@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#eaeaea"
+        >
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="正在加载"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+        <ProgressBar
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/pb"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+    <!--"count": 27,访问数-->
+    <!--"description": "警惕！这6类人吃粗粮易使癌细胞疯长 《这是真的么》第23期：一个部位长肉竟是癌症先兆时长：5'58''播放：682384来源：腾讯视频《这是真的么》第23期：一个部位长肉竟是癌症先兆关闭自动播放相关专辑推荐视频：收起视频正在播放现代生活的精细化和精致化，成为诸多营养疾病的诱因",-->
+    <!--"fcount": 0,收藏数-->
+    <!--"id": 18209,-->
+    <!--"img": "http://tnfs.tngou.net/image/lore/150829/75ddc66c2c011fc5471bde4d218f12e5.jpg",-->
+    <!--"keywords": "粗粮 人群 健康 吸收 营养素 ",-->
+    <!--"loreclass": 3,分类-->
+    <!--"rcount": 0,评论数-->
+    <!--"time": 1440811364000,-->
+    <!--"title": "一些特殊体质的人就不宜常吃粗粮"-->

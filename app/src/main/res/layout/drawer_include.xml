@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/left_bk_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ListView
+        android:dividerHeight="-1dp"
+        android:layout_weight="0.3"
+        android:id="@+id/left_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+</FrameLayout>

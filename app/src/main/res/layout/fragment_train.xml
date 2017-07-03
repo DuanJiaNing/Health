@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/train_tab_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <ImageView
+                    android:id="@+id/train_ib_home__"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:alpha="0.5"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/train_back01"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/train_ib_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    android:paddingTop="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/train_home" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <ImageView
+                    android:id="@+id/train_ib_stations__"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:alpha="0.5"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/train_back01"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/train_ib_stations"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    android:paddingTop="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/train_stations" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <ImageView
+                    android:id="@+id/train_ib_price__"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:alpha="0.5"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/train_back01"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/train_ib_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    android:paddingTop="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/train_price" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:alpha="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/line_white_d_d" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white_d" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.ai.forhealth.view.main.train.NoScrollViewPager
+                android:id="@+id/train_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/train_tab_layout_height" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/tv1001"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@color/green_d" />
+
+                    <TextView
+                        android:id="@+id/train_show_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tv1001"
+                        android:layout_toRightOf="@+id/tv1001"
+                        android:gravity="center_vertical"
+                        android:text="健康资讯" />
+
+                    <Button
+                        android:id="@+id/train_bt_more"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="更多"
+                        android:textColor="@color/green_d_d"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/train_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

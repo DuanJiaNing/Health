@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    >
+
+    <RelativeLayout
+        android:layout_weight="0.7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/white_d"
+            android:gravity="center"
+            android:background="@drawable/health_item_time"
+            android:id="@+id/health_rv_time"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:ellipsize="end"
+            android:textColor="@color/white_d_d_d_d"
+            android:textStyle="bold"
+            android:lines="1"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/health_rv_title"
+            android:layout_below="@id/health_rv_time"
+            android:text="一些特殊体质的人就不宜常吃粗粮"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:textColor="@color/white_d_d_d"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/health_rv_description"
+            android:layout_below="@id/health_rv_title"
+            android:text="警惕！这6类人吃粗粮易使癌细胞疯长 《这是真的么》第23期：一个部位长肉竟是癌症先兆时长：5'58''播放：682384来源：腾讯视频《这是真的么》第23期：一个部位长肉竟是癌症先兆关闭自动播放相关专辑推荐视频：收起视频正在播放现代生活的精细化和精致化，成为诸多营养疾病的诱因"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/health_rv_description"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:textColor="@color/green_d_d"
+                android:textSize="10sp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:background="@drawable/health_item_collection"
+                android:id="@+id/health_rv_colection"
+                android:text="52次收藏"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:id="@+id/health_rv_comment"
+                android:text="25次评论"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/health_rv_comment"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="11sp"
+                android:id="@+id/health_rv_visit"
+                android:text="访问数"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:text="关键字"
+            android:id="@+id/health_rv_key_world"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:src="@mipmap/tip_error"
+            android:id="@+id/health_rv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <!--"count": 27,访问数-->
+    <!--"description": "警惕！这6类人吃粗粮易使癌细胞疯长 《这是真的么》第23期：一个部位长肉竟是癌症先兆时长：5'58''播放：682384来源：腾讯视频《这是真的么》第23期：一个部位长肉竟是癌症先兆关闭自动播放相关专辑推荐视频：收起视频正在播放现代生活的精细化和精致化，成为诸多营养疾病的诱因",-->
+    <!--"fcount": 0,收藏数-->
+    <!--"id": 18209,-->
+    <!--"img": "http://tnfs.tngou.net/image/lore/150829/75ddc66c2c011fc5471bde4d218f12e5.jpg",-->
+    <!--"keywords": "粗粮 人群 健康 吸收 营养素 ",-->
+    <!--"loreclass": 3,分类-->
+    <!--"rcount": 0,评论数-->
+    <!--"time": 1440811364000,-->
+    <!--"title": "一些特殊体质的人就不宜常吃粗粮"-->

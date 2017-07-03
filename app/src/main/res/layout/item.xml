@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/juhe_news_it_pic"
+            android:layout_width="@dimen/news_item_image"
+            android:layout_height="@dimen/news_item_image"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="13dp"
+            android:src="@mipmap/load_image_fail" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:id="@+id/la_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/juhe_news_it_author_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:lines="1"
+                    android:text="author_name"
+                    android:textColor="@color/news_item_title"
+                    android:textSize="@dimen/news_item_title" />
+
+                <TextView
+                    android:id="@+id/juhe_news_it_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="end|center"
+                    android:text="date"
+                    android:textColor="@color/news_item_descrip_date"
+                    android:textSize="@dimen/news_item_des_date" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/juhe_news_it_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/la_11"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="41dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:textColor="@color/news_item_descrip_date"
+                android:textSize="@dimen/news_item_des_date" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

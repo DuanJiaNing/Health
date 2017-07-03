@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/app_bar_main_"
+    tools:context="com.example.ai.forhealth.app.RootActivity">
+
+    <include layout="@layout/content_main" />
+
+    <RelativeLayout
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:id="@+id/app_bar"
+        >
+
+        <ImageButton
+            android:src="@drawable/main_button"
+            android:visibility="visible"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/action_bar_height"
+            android:id="@+id/app_bar_openDrawer"
+            />
+
+        <TextView
+            android:textColor="@color/white_d"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:shadowColor="@color/white_d_d"
+            android:shadowRadius="8.0"
+            android:gravity="center"
+            android:text="Query助手"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/app_bar_text"
+            />
+
+        <ImageButton
+            android:src="@android:drawable/ic_menu_search"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/action_bar_height"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/app_bar_my"
+            />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

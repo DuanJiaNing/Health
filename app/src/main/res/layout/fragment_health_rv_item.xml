@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/health_rv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="一些特殊体质的人就不宜常吃粗粮"
+                android:textColor="@color/white_d_d_d_d"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/health_rv_mark"
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_d_d_d" />
+
+                <TextView
+                    android:id="@+id/health_rv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="time"
+                    android:textColor="@color/white_d_d_d"
+                    android:textSize="12sp"
+
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="17dp"
+                android:background="@color/white_d_d" />
+
+            <TextView
+                android:id="@+id/health_rv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:maxLines="5"
+                android:minLines="2"
+                android:text="警惕！这6类人吃粗粮易使癌细胞疯长 《这是真的么》第23期：一个部位长肉竟是癌症先兆时长：5'58''播放：682384来源：腾讯视频《这是真的么》第23期：一个部位长肉竟是癌症先兆关闭自动播放相关专辑推荐视频：收起视频正在播放现代生活的精细化和精致化，成为诸多营养疾病的诱因"
+                android:textColor="@color/white_d_d_d_d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/health_rv_image"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="16dp"
+                android:src="@mipmap/tip_error" />
+
+            <RelativeLayout
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <TextView
+                    android:textStyle="italic"
+                    android:id="@+id/health_rv_key_world"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="粗粮 人群 健康  吸收 营养素 粗粮 人群 健康  吸收 营养素"
+                    android:textColor="@color/white_d_d"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@+id/health_rv_collection"
+                    android:layout_toEndOf="@+id/health_rv_collection" />
+
+
+                <TextView
+                    android:id="@+id/health_rv_visit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/health_item_collection"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="123访问"
+                    android:textColor="@color/green_d"
+                    android:textSize="11sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/line004"
+                    android:gravity="center"
+                    android:background="@color/white_d_d"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <ImageButton
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:id="@+id/health_rv_collection"
+                    android:background="@drawable/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/line004"
+                    android:layout_toEndOf="@+id/line004"
+                    />
+
+                <ImageButton
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:id="@+id/health_rv_share"
+                    android:background="@drawable/health_collection_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/line004"
+                    android:layout_toStartOf="@+id/line004" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout><!--"count": 27,访问数--><!--"description": "警惕！这6类人吃粗粮易使癌细胞疯长 《这是真的么》第23期：一个部位长肉竟是癌症先兆时长：5'58''播放：682384来源：腾讯视频《这是真的么》第23期：一个部位长肉竟是癌症先兆关闭自动播放相关专辑推荐视频：收起视频正在播放现代生活的精细化和精致化，成为诸多营养疾病的诱因",--><!--"fcount": 0,收藏数--><!--"id": 18209,--><!--"img": "http://tnfs.tngou.net/image/lore/150829/75ddc66c2c011fc5471bde4d218f12e5.jpg",--><!--"keywords": "粗粮 人群 健康 吸收 营养素 ",--><!--"loreclass": 3,分类--><!--"rcount": 0,评论数--><!--"time": 1440811364000,--><!--"title": "一些特殊体质的人就不宜常吃粗粮"-->

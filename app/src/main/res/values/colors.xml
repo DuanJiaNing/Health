@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#04b18e</color>
+
+    <!--<color name="purple">#9b93f9</color>-->
+    <!--<color name="purple_d">#8B82EF </color>-->
+    <!--<color name="purple_d_d">#5f55d4</color>-->
+
+    <color name="green">#0ecf8f</color>
+    <color name="green_d">#04b18e</color>
+    <color name="green_d_d">#058f73</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_d">#eeeeef</color>
+    <color name="white_d_d">#acacac</color>
+    <color name="white_d_d_d">#686868</color>
+    <color name="white_d_d_d_d">#3d3d3d</color>
+
+    <color name="news_item_title">#505050</color>
+    <color name="news_item_descrip_date">#6f6f6f</color>
+
+    <color name="express_status">#16c4a1</color>
+
+    <color name="health_item_time">#16c47b</color>
+
+    <color name="express_tel">#186bd1</color>
+
+    <color name="express_phone_call">#68695fda</color>
+
+    <color name="express_query">#f73e00</color>
+    <color name="express_query_press">#9b2801</color>
+
+
+</resources>

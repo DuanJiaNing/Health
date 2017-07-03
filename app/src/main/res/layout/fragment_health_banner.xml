@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:banner="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--<com.example.ai.forhealth.view.mview.banner.SLooperViewPager-->
+        <!--android:id="@+id/health_sloop_view_pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+
+    <com.example.ai.forhealth.view.mview.banner.Banner
+        android:id="@+id/health_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        banner:banner_tipTextColor="@color/white_d_d_d"
+        banner:banner_pointContainerBackground="@color/white"
+        />
+
+
+
+</LinearLayout>
